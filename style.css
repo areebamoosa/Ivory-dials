@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+/* Custom Classes */
+
+/* Custom Fonts */
+
+.montserrat-fam {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.roboto-fam {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+/* Custom Colors */
+.cust-blue {
+  background-color: #769cc7;
+}
+
+.cust-bl {
+  background-color: #111111;
+}
+.nav-bl {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.custom-bg-gradient {
+  /* background: linear-gradient(to bottom, #a1b1c8 0%, #889ab5 20%, #889ab5 100%); */
+
+  background: linear-gradient(
+    to bottom,
+    #000000 0%,
+    #1a1a1a 15%,
+    #2e2e2e 30%,
+    #464646 50%,
+    #6a6a6a 70%,
+    #bfbfbf 85%,
+    #ffffff 100%
+  );
+}
+
+/* Extra Styling */
+
+.star-glow {
+  text-shadow: 0 0 2px rgba(255, 223, 0, 0.8), 0 0 6px rgba(255, 223, 0, 0.6);
+}
+
+.main-img {
+  height: 680px;
+}
+.cont {
+  height: 600px;
+  width: 1500px;
+}
+.cont img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}

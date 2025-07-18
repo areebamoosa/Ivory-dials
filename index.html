@@ -3,9 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Heelluxe</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="style.css" />
+    <title>Watches</title>
+    <link href="./output.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -13,46 +12,59 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- Sliding Bar  -->
-    <div class="slide-bar">
+    <div
+      class="slide-bar cust-blue flex justify-center items-center text-center h-10 montserrat-fam text-base"
+    >
       <div class="slide-1">
-        <p>Flat Sale : 50% OFF on Chic Magnet - 24 Hours Only!</p>
+        <p>FLAT SALE : 50% OFF ON CHIC MAGNET - 24 HOURS ONLY!</p>
       </div>
-      <div class="slide-2">
+      <!-- <div class="slide-2">
         <p>Buy 1 and get 15% OFF on 2nd Watch</p>
-      </div>
+      </div> -->
     </div>
 
     <!-- Adds Bar -->
 
-    <div class="add-bar">
-      <div class="ad-1">
-        <div class="stars">
+    <div
+      class="add-bar h-13 cust-bl text-amber-50 flex justify-between items-center text-center roboto-fam"
+    >
+      <div class="ad-1 p-40">
+        <div class="stars text-xs star-glow">
           <i class="fa-solid fa-star" style="color: #ffd43b"></i>
           <i class="fa-solid fa-star" style="color: #ffd43b"></i>
           <i class="fa-solid fa-star" style="color: #ffd43b"></i>
           <i class="fa-solid fa-star" style="color: #ffd43b"></i>
           <i class="fa-solid fa-star" style="color: #ffd43b"></i>
         </div>
-        <div class="text">
+
+        <div class="text text-xs font-extralight">
           <p>18 Million Satisfied Customers</p>
         </div>
       </div>
-      <div class="ad-2">
-        <div class="offer">
-          <p>30 DAYS HASSLE-FREE RETURNS</p>
+
+      <div class="ad-2 p-40">
+        <div class="offer text-sm">
+          <p>30 DAYS HASSLE - FREE RETURNS</p>
         </div>
-        <div class="exchange">
+        <div class="exchange text-xs font-extralight">
           <p>Easy Refund & Exchange</p>
         </div>
       </div>
-      <div class="ad-3">
+
+      <div class="ad-3 text-xs p-40">
         <div class="year">
           <p>1 YEAR</p>
         </div>
-        <div class="warranty">
+        <div class="warranty font-extralight">
           <p>INTERNATIONAL WARRANTY</p>
         </div>
       </div>
@@ -60,71 +72,79 @@
 
     <!-- Navigation Bar -->
 
-    <div class="logo"></div>
-    <div class="nav-list">
-      <div class="trans-li">FLAT 40% OFF</div>
-      <ul>
-        <li>WATCHES</li>
-        <li>MEN</li>
-        <li>WOMEN</li>
-        <li>FOR COUPLES</li>
-        <li>BEST SELLERS</li>
-      </ul>
-    </div>
-    <div class="customer">
-      <div class="cust-items">
-        <i class="fa-regular fa-user"></i>
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <i class="fa-solid fa-bag-shopping"></i>
+    <div
+      class="nav-bar nav-bl flex justify-between text-center items-center h-37 montserrat-fam"
+    >
+      <div class="logo p-20"></div>
+
+      <div class="nav-list flex gap-10 p-20">
+        <div class="trans-li">FLAT 40% OFF</div>
+        <ul class="flex gap-10">
+          <li>WATCHES</li>
+          <li>MEN</li>
+          <li>WOMEN</li>
+          <li>FOR COUPLES</li>
+          <li>BEST SELLERS</li>
+        </ul>
+      </div>
+
+      <div class="customer flex p-20 text-2xl">
+        <div class="cust-items flex gap-5 text-2xl">
+          <i class="fa-regular fa-user"></i>
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-solid fa-bag-shopping"></i>
+        </div>
       </div>
     </div>
 
     <!-- Main Image Container -->
 
-    <section>
-      <div class="cont">
-        <div class="cont-img">
-          <img src="" alt="" />
-        </div>
+    <div class="main-img custom-bg-gradient flex justify-center items-center">
+      <div class="cont rounded-4xl">
+        <img src="Img/banner2.webp" alt="" class="rounded-4xl" />
       </div>
-    </section>
+    </div>
 
     <!-- Best Seller Watches-->
-    <section>
-      <div class="b-watches">
-        <div class="b-watch">
-          <img src="" alt="" />
+    <section class=" mt-35 best-sellers flex justify-center items-center h-[100px]">
+      <div class="b-watches flex justify-center items-center m-50 gap-10 text-center montserrat-fam font-semibold">
+
+        <div class="b-watch  ">
+          <img src="Img/best2.webp" alt="" />
+          <p>Female Fancy</p>
         </div>
-        <div class="b-watch">
-          <img src="" alt="" />
+        <div class="b-watch  ">
+          <img src="Img/best3.webp" alt="" />
+          <p>Men Formal</p>
         </div>
-        <div class="b-watch">
-          <img src="" alt="" />
+        <div class="b-watch ">
+          <img src="Img/best2.webp" alt="" />
+          <p>Female Bracelets</p>
         </div>
-        <div class="b-watch">
-          <img src="" alt="" />
+        <div class="b-watch ">
+          <img src="Img/best4.webp" alt="" />
+          <p>Men Sports</p>
         </div>
-        <div class="b-watch">
-          <img src="" alt="" />
+        <div class="b-watch ">
+          <img src="Img/best5.webp" alt="" />
+          <p>Smart Watches</p>
         </div>
-        <div class="b-watch">
-          <img src="" alt="" />
+        <div class="b-watch ">
+          <img src="Img/best6.webp" alt="" />
+          <p>Couple Watches</p>
         </div>
-      </div>
     </section>
 
     <!-- Featured Products -->
 
-    <section>
+    <!-- <section>
       <h2>FEATURED PRODUCTS</h2>
 
       <div class="feat-nav">
         <ul>
-          <li>WOMEN</li>
-          <li>MEN</li>
-          <li>COUPLE</li>
-          <li>BEST SELLER</li>
-          <li>SMART WATCHES</li>
+          <li> <a href="">BEST SELLER</a></li>
+          <li><a href="">COUPLE</a></li>
+          <li><a href="">SMART WATCHES</a></li>
         </ul>
       </div>
 
@@ -139,17 +159,19 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- View All Button -->
 
-    <div class="view">
+    <!-- <div class="view">
       <div class="v-btn">
         <button>VIEW ALL</button>
       </div>
-    </div>
+    </div> -->
 
-    <div class="add-imgs">
+    <!-- Adds -->
+
+    <!-- <div class="add-imgs">
       <div class="add-1">
         <img src="" alt="" />
       </div>
@@ -159,11 +181,11 @@
       <div class="add-3">
         <img src="" alt="" />
       </div>
-    </div>
+    </div> -->
 
     <!-- Watch & Shop Videos -->
 
-    <div class="videos">
+    <!-- <div class="videos">
       <div class="video">
         <video src=""></video>
         <p></p>
@@ -184,11 +206,11 @@
         <video src=""></video>
         <p></p>
       </div>
-    </div>
+    </div> -->
 
     <!-- Footer -->
 
-    <footer>
+    <!-- <footer>
       <div class="footer-bar">
         <div class="logo"></div>
 
@@ -226,14 +248,14 @@
           </div>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <!-- Credits Footer -->
-    <div class="foot">
+    <!-- <div class="foot">
       <p>© Copyright 2025 Watches. All rights reserved.</p>
       <span class="credit"
         >Designed with <i class="fa-regular fa-heart"></i> by A.M</span
       >
-    </div>
+    </div> -->
   </body>
 </html>

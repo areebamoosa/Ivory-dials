@@ -1,10 +1,6 @@
 {
-  "scripts": {
-    "start": "vite"
-},
-"devDependencies": {
-    "@tailwindcss/postcss": "^4.1.11",
-    "postcss": "^8.5.6",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.11",
     "tailwindcss": "^4.1.11"
   }
 }
