@@ -29,10 +29,7 @@
   background-color: #000000;
   color: #ffffff;
 }
-
 .custom-bg-gradient {
-  /* background: linear-gradient(to bottom, #a1b1c8 0%, #889ab5 20%, #889ab5 100%); */
-
   background: linear-gradient(
     to bottom,
     #000000 0%,
@@ -43,6 +40,13 @@
     #bfbfbf 85%,
     #ffffff 100%
   );
+}
+
+.wColor {
+  background-color: #f8f9fc;
+}
+.w-col {
+  background-color: #ffffff;
 }
 
 /* Extra Styling */
@@ -62,4 +66,10 @@
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+@layer base {
+  body {
+    margin: 0;
+    padding: 0;
+  }
 }
