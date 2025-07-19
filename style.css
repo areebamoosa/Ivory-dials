@@ -67,9 +67,52 @@
   width: 100%;
   object-fit: cover;
 }
-/* @layer base {
-  body {
-    margin: 0;
-    padding: 0;
+
+/* Animation for Flat Sale Lgo */
+@layer utilities {
+  .animate-slow-blink {
+    animation: slow-blink 2s infinite;
   }
-} */
+
+  @keyframes slow-blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+}
+
+/* Animation for Sale Bar */
+
+@layer utilities {
+  .animate-slide-text {
+    @apply absolute whitespace-nowrap;
+    animation: slideText 4s  infinite;
+  }
+
+  @keyframes slideText {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    10% {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+    70% {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+    90% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+  }
+}
+
