@@ -29,3 +29,23 @@ watchBoxes.forEach((box) => {
     });
   });
 });
+
+// Data Content of each section
+
+const tabs = document.querySelectorAll('.tab-button');
+const contents = document.querySelectorAll('.tab-content');
+
+tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+        const target = tab.getAttribute('data-tab');
+
+        contents.forEach(content => {
+            if (content.getAttribute('data-content') === target) {
+                content.classList.remove('hidden');
+            } else {
+                content.classList.add('hidden');
+            }
+        });
+    });
+});
+

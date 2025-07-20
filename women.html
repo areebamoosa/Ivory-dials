@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ivory</title>
+
     <link href="./output.css" rel="stylesheet" />
     <link
       rel="stylesheet"
@@ -18,9 +19,13 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="icon" href="Img/svg.png"  />
+<link rel="stylesheet" href="style.css">
+
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link rel="icon" href="Img/svg.png"  />
+
   </head>
   <body 
   >
@@ -73,28 +78,32 @@
 
     <!-- Navigation Bar -->
 
-    
 
 
-    <div
+      <div
       class="nav-bar nav-bl flex justify-between text-center items-center h-90 montserrat-fam"
     >
-      <div class="logo w-[100px] h-[100px] ml-[145px] ">
+      <div class="logo w-[100px] h-[100px] ml-[145px]  ">
         <a href="index.html"><img src="Img/svg.png" class="brightness-200 drop-shadow-[0_0_15px_#FFD700] animate-pulse"></a>
       </div>
 
 
       <div class="nav-list flex gap-10 p-20">
 
-        <div class="trans-li trans-li animate-slow-blink text-sm whitespace-nowrap">FLAT 40% OFF</div>
+        <div class="trans-li trans-li animate-slow-blink text-sm">FLAT 40% OFF</div>
 
         <ul class="flex gap-10">
 
-<li class="transition-all duration-300 hover:scale-105 hover:text-gray-400 cursor-pointer"><a href="watches.html">WATCHES</a></li>
-<li class="transition-all duration-300 hover:scale-105 hover:text-gray-400 cursor-pointer"><a href="men.html">MEN</a></li>
-<li class="transition-all duration-300 hover:scale-105 hover:text-gray-400 cursor-pointer"><a href="women.html">WOMEN</a></li>
-<li class="transition-all duration-300 hover:scale-105 hover:text-gray-400 cursor-pointer"><a href="forcouple.html">FOR COUPLE</a></li>
-<li class="transition-all duration-300 hover:scale-105 hover:text-gray-400 cursor-pointer"><a href="bestseller.html">BEST SELLERS</a></li>
+
+
+
+
+          <li class="transition-all duration-300 hover:scale-105 hover:text-gray-400 cursor-pointer"><a href="watches.html">WATCHES</a></li>
+          <li class="transition-all duration-300 hover:scale-105 hover:text-gray-400 cursor-pointer"><a href="men.html">MEN</a></li>
+          <li class="transition-all duration-300 hover:scale-105 hover:text-gray-400 cursor-pointer"><a href="women.html">WOMEN</a></li>
+          <li class="transition-all duration-300 hover:scale-105 hover:text-gray-400 cursor-pointer"><a href="forcouple.html">FOR COUPLE</a></li>
+          <li class="transition-all duration-300 hover:scale-105 hover:text-gray-400 cursor-pointer"><a href="bestseller.html">BEST SELLERS</a></li>
+          
 
         </ul>
       </div>
@@ -109,16 +118,10 @@
       </div>
     </div>
 
-    <!-- Main Image Container -->
 
-    <div class="main-img custom-bg-gradient flex justify-center items-center mt-[-50px] relative w-full">
-      <div class="cont rounded-4xl">
-        <img id="slideImage" src="Img/banner2.webp" alt="" class="rounded-4xl w-full h-full object-cover transition-opacity duration-1000" />
-      </div>
-    </div>
 
     <!-- Best Seller Watches-->
-    <section class=" mt-35 best-sellers flex justify-center items-center h-[100px]">
+    <section class=" mt-[80px] best-sellers flex justify-center items-center h-[100px]">
       <div class="b-watches flex justify-center items-center m-50 gap-10 text-center montserrat-fam font-semibold text-xs">
 
 <div class="b-watch w-col transition-all duration-300 hover:shadow-[0_0_25px_4px_rgba(255,192,203,0.5)] hover:border hover:border-pink-200 hover:rounded-xl hover:-translate-y-1 hover:scale-[1.03]">
@@ -149,32 +152,53 @@
 
     </section>
 
-    <!-- Featured Products -->
 
-      <div class="flex justify-center items-center text-center mt-[60px]  font-normal">
 
-<div class="text-center  m-10 h-[1000px] montserrat-fam">
-  <h2 class="mt-40 flex justify-center items-center font-medium text-2xl">FEATURED PRODUCTS</h2>
+<div class="mt-[100px] item-list flex justify-between items-center px-[200px] montserrat-fam text-sm font-normal">
 
-  <div class="flex justify-center items-center text-center mt-[60px]  font-normal">
+        <!-- Filter Option -->
+        <div class="filter flex gap-[5px] border-2 border-gray-500 px-3 py-1">
+          <button class="flex justify-center items-center gap-[15px]"> <i class="fa-solid fa-indent"></i> Filter</button>
+        </div>
+ 
+        <!-- Total Products Heading -->
+        <div class="prod-heading">
+         <h2 class="  text-sm">13 products</h2>
+        </div>
+ 
+ 
+       <!-- Select Option -->
+ 
+       <div class="select-options border-2 border-gray-500 px-6 py-1">
+ 
+         <select class="border-none outline-none focus:outline-none focus:ring-0"> 
+           <option>Featured</option>
+           <option>Best Selling</option>
+           <option>Price, low to high</option>
+           <option>Price, high to low</option>
+           <option>Sort Original</option>
+         </select>
+         
+       </div>
+</div>
 
-    <ul class="flex justify-center items-center text-center gap-[120px]">
-      <li class="bg-black text-white px-10 py-2 rounded-tl-xl rounded-tr-xl "><a href="#">BEST SELLER</a></li>
-      <li><a href="#">WOMEN</a></li>
-      <li><a href="#">MEN</a></li>
-      <li><a href="#">COUPLE</a></li>
-      <li><a href="#">SMART WATCHES</a></li>
-    </ul>
 
-  </div>
 
+    <!-- Total Products -->
+
+    <div class="   m-10 h-[1000px] montserrat-fam">
+
+
+
+      </div>
 
       <!-- Watch Boxes Collection -->
 
-
         <!--  All watches container-->
 
-        <div class="watch-boxes m-[70px] p-[40px] flex flex-wrap gap-10 justify-center">
+
+          <div class="watch-boxes mt-[-1100px] p-[40px] flex flex-wrap gap-10 justify-center">
+
 
         <!-- Individual box # 01 -->
         <div class="watch-box  group w-1/4 h-[500px]   wColor rounded-3xl shadow-2xl ">
@@ -281,6 +305,10 @@
           </div>
         </div>
       </div>
+
+
+
+
 
         <!-- Individual box # 03 -->
         <div class="watch-box  group w-1/4 h-[500px]   wColor rounded-3xl shadow-2xl ">
@@ -483,95 +511,253 @@
         </div>
       </div>
 
+
+
+
+
+
+        <!-- Individual box # 07 -->
+        <div class="watch-box  group w-1/4 h-[500px]   wColor rounded-3xl shadow-2xl ">
+          <div class=" ml-[30px] sale-box bg-gradient-to-r from-cyan-300 via-blue-400 to-fuchsia-500 text-white px-1 py-1 rounded-sm text-xs font-medium
+          w-[80px] h-[30px] whitespace-nowrap">
+            <p>40% OFF</p>
+          </div>
+
+          <div class="w-box">
+           <div class="w-img h-[300px] w-col flex justify-center items-center m-[9px] ">
+             <img src="Img/f1.webp" alt="" class="h-[300px] w-[300px] object-contain transition-transform duration-300 ease-in-out group-hover:scale-105 product-img"  width="100%">
+             </div>
+             <div class="w-text mt-[3px] text-xs">
+             <p class="text-sm font-medium">Royce</p>
+             <span class="text-xs text-gray-500">Women's Stainless Steel</span>
+             </div>
+             <!-- Small Images row -->
+                <div class="small-img-row w-[200px] h-[200px] flex gap-[5px] justify-center mt-2 " >
+
+
+                  <div class="small-imgs cursor-pointer  w-[40px] h-[40px] object-cover border-2 border-gray-200">
+                    <div class="small w-col ">
+                      <img src="Img/small1.webp" width="100%"   alt="" class="small-img">
+                    </div>
+                  </div>
+                  <div class="small-imgs cursor-pointer  w-[40px] h-[40px] object-cover border-2 border-gray-200">
+                    <div class="small w-col ">
+                      <img src="Img/small2.webp" width="100%"   alt="" class="small-img">
+                    </div>
+                  </div>
+                  <div class="small-imgs cursor-pointer  w-[40px] h-[40px] object-cover border-2 border-gray-200">
+                    <div class="small w-col ">
+                      <img src="Img/small3.webp" width="100%"   alt="" class="small-img">
+                    </div>
+                  </div>
+                  <div class="small-imgs cursor-pointer  w-[40px] h-[40px] object-cover border-2 border-gray-200">
+                    <div class="small w-col ">
+                      <img src="Img/f1.webp" width="100%"   alt="" class="small-img">
+                    </div>
+                  </div>
+              </div>
+              <!-- Pricing and Buy Now Button -->
+             <div class="w-pricing flex gap-[50px] mt-[-150px] ">  
+             <div class="prices flex justify-center items-center gap-[15px] ml-2">
+             <p class="text-lg font-medium">Rs.9,890 </p>
+             <span class="line-through text-gray-500 text-xs">Rs.12,999</span>
+             </div>
+             <div class="p-btn">
+            <button class="bg-black rounded-lg p-2 text-amber-50 text-sm font-light">Quick Buy</button>
+          </div>
+          </div>
+        </div>
+      </div>
+
+
+
+        <!-- Individual box # 08 -->
+        <div class="watch-box  group w-1/4 h-[500px]   wColor rounded-3xl shadow-2xl ">
+          <div class=" ml-[30px] sale-box bg-gradient-to-r from-cyan-300 via-blue-400 to-fuchsia-500 text-white px-1 py-1 rounded-sm text-xs font-medium
+          w-[80px] h-[30px] whitespace-nowrap">
+            <p>40% OFF</p>
+          </div>
+
+          <div class="w-box">
+           <div class="w-img h-[300px] w-col flex justify-center items-center m-[9px] ">
+             <img src="Img/f2.webp" alt="" class="h-[300px] w-[300px] object-contain transition-transform duration-300 ease-in-out group-hover:scale-105 product-img"  width="100%">
+             </div>
+             <div class="w-text mt-[3px] text-xs">
+             <p class="text-sm font-medium">Royce</p>
+             <span class="text-xs text-gray-500">Women's Stainless Steel</span>
+             </div>
+             <!-- Small Images row -->
+                <div class="small-img-row w-[200px] h-[200px] flex gap-[5px] justify-center mt-2 " >
+
+                  <div class="small-imgs cursor-pointer  w-[40px] h-[40px] object-cover border-2 border-gray-200">
+                    <div class="small w-col ">
+                      <img src="Img/small4.webp" width="100%"   alt="" class="small-img">
+                    </div>
+                  </div>
+                  <div class="small-imgs cursor-pointer  w-[40px] h-[40px] object-cover border-2 border-gray-200">
+                    <div class="small w-col ">
+                      <img src="Img/small5.webp" width="100%"   alt="" class="small-img">
+                    </div>
+                  </div>
+                  <div class="small-imgs cursor-pointer  w-[40px] h-[40px] object-cover border-2 border-gray-200">
+                    <div class="small w-col ">
+                      <img src="Img/small6.webp" width="100%"   alt="" class="small-img">
+                    </div>
+                  </div>
+                  <div class="small-imgs cursor-pointer  w-[40px] h-[40px] object-cover border-2 border-gray-200">
+                    <div class="small w-col ">
+                      <img src="Img/f2.webp" width="100%"   alt="" class="small-img">
+                    </div>
+                  </div>
+              </div>
+              <!-- Pricing and Buy Now Button -->
+             <div class="w-pricing flex gap-[50px] mt-[-150px] ">  
+             <div class="prices flex justify-center items-center gap-[15px] ml-2">
+             <p class="text-lg font-medium">Rs.9,890 </p>
+             <span class="line-through text-gray-500 text-xs">Rs.12,999</span>
+             </div>
+             <div class="p-btn">
+            <button class="bg-black rounded-lg p-2 text-amber-50 text-sm font-light">Quick Buy</button>
+          </div>
+          </div>
+        </div>
+      </div>
+
+
+
+        <!-- Individual box # 09 -->
+        <div class="watch-box  group w-1/4 h-[500px]   wColor rounded-3xl shadow-2xl ">
+          <div class=" ml-[30px] sale-box bg-gradient-to-r from-cyan-300 via-blue-400 to-fuchsia-500 text-white px-1 py-1 rounded-sm text-xs font-medium
+          w-[80px] h-[30px] whitespace-nowrap">
+            <p>40% OFF</p>
+          </div>
+
+          <div class="w-box">
+           <div class="w-img h-[300px] w-col flex justify-center items-center m-[9px] ">
+             <img src="Img/f3.webp" alt="" class="h-[300px] w-[300px] object-contain transition-transform duration-300 ease-in-out group-hover:scale-105 product-img"  width="100%">
+             </div>
+             <div class="w-text mt-[3px] text-xs">
+             <p class="text-sm font-medium">Royce</p>
+             <span class="text-xs text-gray-500">Women's Stainless Steel</span>
+             </div>
+             <!-- Small Images row -->
+                <div class="small-img-row w-[200px] h-[200px] flex gap-[5px] justify-center mt-2 " >
+
+                  <div class="small-imgs cursor-pointer  w-[40px] h-[40px] object-cover border-2 border-gray-200">
+                    <div class="small w-col ">
+                      <img src="Img/small7.webp" width="100%"   alt="" class="small-img">
+                    </div>
+                  </div>
+                  <div class="small-imgs cursor-pointer  w-[40px] h-[40px] object-cover border-2 border-gray-200">
+                    <div class="small w-col ">
+                      <img src="Img/small8.webp" width="100%"   alt="" class="small-img">
+                    </div>
+                  </div>
+                  <div class="small-imgs cursor-pointer  w-[40px] h-[40px] object-cover border-2 border-gray-200">
+                    <div class="small w-col ">
+                      <img src="Img/small9.webp" width="100%"   alt="" class="small-img">
+                    </div>
+                  </div>
+                  <div class="small-imgs cursor-pointer  w-[40px] h-[40px] object-cover border-2 border-gray-200">
+                    <div class="small w-col ">
+                      <img src="Img/f3.webp" width="100%"   alt="" class="small-img">
+                    </div>
+                  </div>
+              </div>
+              <!-- Pricing and Buy Now Button -->
+             <div class="w-pricing flex gap-[50px] mt-[-150px] ">  
+             <div class="prices flex justify-center items-center gap-[15px] ml-2">
+             <p class="text-lg font-medium">Rs.9,890 </p>
+             <span class="line-through text-gray-500 text-xs">Rs.12,999</span>
+             </div>
+             <div class="p-btn">
+            <button class="bg-black rounded-lg p-2 text-amber-50 text-sm font-light">Quick Buy</button>
+          </div>
+          </div>
+        </div>
+      </div>
+
+
 </div>
 
 
-    <!-- View All Button -->
+<!-- Brand Details -->
 
-    <div class="view flex justify-center items-center text-xs">
-      <div class=  " w-[120px] h-[40px] rounded-md v-btn bg-black text-white  flex gap-3 justify-center items-center text-center">
-        <button>VIEW ALL</button>
-        <i class="fa-solid fa-arrow-right"></i>
-      </div>
-    </div>
-
-    <!-- Adds -->
-
-
-
-     <div class="add-imgs flex justify-center items-center gap-[30px] mt-10 cursor-pointer">
-      <div class="add-1 h-[450px] w-[450px] rounded-2xl  ">
-        <img src="Img/add1.webp" alt="" class="rounded-2xl transition-transform duration-300 ease-in-out hover:scale-105" />
-      </div>
-      <div class="add-1 h-[450px] w-[450px] rounded-2xl ">
-        <img src="Img/add2.webp" alt="" class="rounded-2xl transition-transform duration-300 ease-in-out hover:scale-105" />
-      </div>
-      <div class="add-1 h-[450px] w-[450px] rounded-2xl ">
-        <img src="Img/add3.webp" alt="" class="rounded-2xl transition-transform duration-300 ease-in-out hover:scale-105" />
-      </div>
-    </div>
     
+<div class="brand-details flex flex-col justify-items-start items-start montserrat-fam m-[60px] p-[30px]">
 
 
-    <!-- Watch & Shop Videos -->
+  <div class="test-box">
+    <h4 class="text-xl font-medium">Sveston Smart Watches Prices in Pakistan</h4>
+    <p class="text-xs mt-[18px]">Looking for the best smart watch brands in Pakistan? Look no further! Our curated selection of best smart watches in Pakistan bring together top-tier technology and stylish design to redefine your everyday life. From fitness tracking to seamless connectivity, Sveston smart watches offer everything you need and more. Plus, with our affordable smart watch prices in Pakistan, you can enjoy cutting-edge features without breaking the bank</p>
+  </div>
 
-    <h2 class="mt-[300px] montserrat-fam font-medium text-2xl">WATCH & SHOP</h2>
+<br>
+<br>
 
-    <div class="videos flex justify-center items-center flex-wrap gap-[20px] mt-[80px]  ">
+  <div class="text-box">
+    <h4 class="text-xl font-medium">Precision Performance, Seamless Connectivity</h4>
+    <p class="text-xs mt-[18px]">Powered by cutting-edge technology, Sveston smart watches offer more than just health tracking. Experience lightning-fast performance and seamless connectivity with features like Bluetooth calling, smart notifications, and voice assistants. Whether you're managing calls, receiving notifications or accessing your favorite apps, you can now stay connected to your digital world from the convenience of your wrist. Especially our collection of smartwatches combine functionality with fashion, ensuring that you look and feel your best at all times.
+    </p>
+  </div>
+  <br>
+<br>
 
-    <!-- Video # 01 -->
-      <div class="video h-[150px] w-[250px] ">
-        <video src="Img/v1.mp4"autoplay 
-        loop 
-        muted 
-        playsinline class="rounded-tl-2xl rounded-tr-2xl"></video>
-        <p class="text-amber-50 bg-black montserrat-fam p-2 text-sm rounded-bl-2xl rounded-br-2xl">SHOP MEN'S</p>
-      </div>
-    <!-- Video # 02 -->
-      <div class="video h-[150px] w-[250px] ">
-        <video src="Img/v2.mp4"autoplay 
-        loop 
-        muted 
-        playsinline class="rounded-tl-2xl rounded-tr-2xl"></video>
-        <p class="text-amber-50 bg-black montserrat-fam p-2 text-sm rounded-bl-2xl rounded-br-2xl">SHOP MEN'S</p>
-      </div>
-    <!-- Video # 03 -->
-      <div class="video h-[150px] w-[250px] ">
-        <video src="Img/v3.mp4"autoplay 
-        loop 
-        muted 
-        playsinline class="rounded-tl-2xl rounded-tr-2xl"></video>
-        <p class="text-amber-50 bg-black montserrat-fam p-2 text-sm rounded-bl-2xl rounded-br-2xl">SHOP WOMEN'S</p>
-      </div>
-    <!-- Video # 04 -->
-      <div class="video h-[150px] w-[250px] ">
-        <video src="Img/v5.mp4"autoplay 
-        loop 
-        muted 
-        playsinline class="rounded-tl-2xl rounded-tr-2xl"></video>
-        <p class="text-amber-50 bg-black montserrat-fam p-2 text-sm rounded-bl-2xl rounded-br-2xl">SHOP MEN'S</p>
-      </div>
-    <!-- Video # 05 -->
-      <div class="video h-[150px] w-[250px] ">
-        <video src="Img/v4.mp4"autoplay 
-        loop 
-        muted 
-        playsinline class="rounded-tl-2xl rounded-tr-2xl"></video>
-        <p class="text-amber-50 bg-black montserrat-fam p-2 text-sm rounded-bl-2xl rounded-br-2xl">SHOP SMARTCWATCHES</p>
-      </div>
-    </div>
+  <div class="text-box">
+    <h4 class="text-xl font-medium">Top-tier Technology, Budget-friendly Options
+    </h4>
+    <p class="text-xs mt-[18px]">Worried about latest smart watch price in Pakistan? Don't be! Our wide range offers options for every budget, so you can find the perfect fit without breaking the bank. Whether you're looking for smart watches for sale or willing to invest in top-tier technology, we've got you covered. Explore our collection today and discover the perfect watch for your lifestyle.
+    </p>
+  </div>
+  <br>
+<br>
+
+  <div class="text-box">
+    <h4 class="text-xl font-medium">Which Smart Watch Brand is best in Pakistan?
+    </h4>
+    <p>Sveston is considered one of the best smart watch brands in Pakistan, offering a wide range of premium smartwatches with advanced features, long battery life, and stylish designs for every lifestyle.
+
+    </p>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+        <!-- Adds -->
+
+
+
+        <div class="add-imgs flex justify-center items-center gap-[30px] mt-10 cursor-pointer">
+          <div class="add-1 h-[450px] w-[450px] rounded-2xl  ">
+            <img src="Img/advertisement1.webp" alt="" class="rounded-2xl transition-transform duration-300 ease-in-out hover:scale-105" />
+          </div>
+          <div class="add-1 h-[450px] w-[450px] rounded-2xl ">
+            <img src="Img/advertisement2.webp" alt="" class="rounded-2xl transition-transform duration-300 ease-in-out hover:scale-105" />
+          </div>
+          <div class="add-1 h-[450px] w-[450px] rounded-2xl ">
+            <img src="Img/advertisement3.webp" alt="" class="rounded-2xl transition-transform duration-300 ease-in-out hover:scale-105" />
+          </div>
+        </div>
+        
+
+
 
     <!-- Footer -->
 
-    <div class="mt-[400px] text-black   h-[400px]  ">
+    <div class="mt-[80px] text-black   h-[400px]  ">
 
       <div class="footer-bar py-[100px] text-black w-col ">
       <hr>
       <br>
       <br>
-        <div class="logo">
+        <div class="logo flex justify-center items-center">
 
-          <p class="mt-[10px]">IVORY DIALS</p>
+          <p class="mt-[10px] ">IVORY DIALS</p>
         </div>
    
         <div class="foot-links flex justify-self-start items-center text-left gap-[200px] mt-[50px] text-xs">
