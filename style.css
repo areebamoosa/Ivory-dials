@@ -75,7 +75,8 @@
   }
 
   @keyframes slow-blink {
-    0%, 100% {
+    0%,
+    100% {
       opacity: 1;
     }
     50% {
@@ -89,7 +90,7 @@
 @layer utilities {
   .animate-slide-text {
     @apply absolute whitespace-nowrap;
-    animation: slideText 4s  infinite;
+    animation: slideText 4s infinite;
   }
 
   @keyframes slideText {
@@ -115,4 +116,3 @@
     }
   }
 }
-
