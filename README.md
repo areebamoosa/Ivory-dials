@@ -16,7 +16,7 @@ Building this project helped me gain confidence in using Tailwind utility classe
 
 ## How it looks 👀
 
-![Screenshot](/Img/Demo.png)
+![Screenshot](/Img/demo.png)
 
 ## 🌐 Live Demo
 
